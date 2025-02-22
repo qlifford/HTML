@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Tables </title>
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="Mydiv1"></div>
+    <div class="Mydiv2"></div>
+    <div class="Mydiv3"></div>
+    <div class="Mydiv4"></div>
+    <div class="Mydiv5"></div>
+    <div class="Mydiv6"></div>
+    <table>
+
+        <tr>
+            <th>Monday</th>
+            <td>html</td>
+            <td>physics</td>
+            <td>pe</td>
+        </tr>
+    </table>
+
+        <font size="20">
+            <!-- <table border="3" bordercolor="red" bgcolor="yellow" width="100%"> -->
+            <table border="3" bordercolor="red" bgcolor="yellow" width="100%">
+                <caption>
+                    Products table
+                </caption>
+            <thead>
+                <tr>
+                    <td colspan="2">Header</td>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Footer</td>
+                </tr>
+            </tfoot>
+                <!--
+                    more attributes:
+                    cellspacing
+                    colspan
+                    rowspan
+                    cellpadding
+                    -->
+                    <tr>
+                        <th  bgcolor="green">Name</th>
+                        <th>Description</th>
+                    </tr>
+
+                    <tr bgcolor="blue">
+                        <td>Car</td>
+                        <td rowspan="3">Good car</td>
+                    </tr>
+
+                    <tr>
+                        <td  rowspan="3">Shoe</td>
+                        <td bgcolor="red">Good Shoe</td>
+                    </tr>
+
+                    <tr>
+                        <td>Shirt</td>
+                        <td>Good Shirt</td>
+                    </tr>
+                </table>
+        </font>
+<!-- example -->
+<section>
+    <table border="6" bordercolor="blue" style="border-collapse: collapse; " width="100%">
+    <caption>Class Timetable</caption>
+    <thead>
+        <tr bgcolor="blue">
+            <th colspan="9">Form One West Timetable</th>
+        </tr>
+    </thead>
+    <tr bgcolor="green">
+        <th >Day <span style="color: white;">\</span> Time</th>
+        <th>8:00-9:00</th>
+        <th>9:00-10:00</th>
+        <th rowspan="7" cellpadding="20">
+            I <br><br>N <br><br> T <br><br> E <br><br>R <br><br>  V <br><br> A <br><br> L
+        </th>
+        <th>10:00-11:00</th>
+        <th>11:00-12:00</th>
+        <th rowspan="7" >
+            L <br><br><br> U <br><br><br> N <br><br><br> C <br><br><br> H
+        </th>
+        <th>12:00-1:00</th>
+        <th>1:00-2:00</th>
+    </tr>
+
+    <tr  bgcolor="yellow" align="center">
+        <th bgcolor="green">Mon</th>
+        <td>Maths</td>
+        <td>English </td>
+        <td>English </td>
+        <td>Kiswahili</td>
+        <td>Biology</td>
+        <td>Physics</td>
+    </tr>
+    <tr  bgcolor="yellow" align="center">
+        <th bgcolor="green">Tue</th>
+        <td>Maths</td>
+        <td>English </td>
+        <td>Kiswahili</td>
+        <td>Kiswahili</td>
+        <td>Biology</td>
+        <td>Physics</td>
+    </tr>
+    <tr  bgcolor="yellow" align="center">
+        <th bgcolor="green">Wed</th>
+        <td>Maths</td>
+        <td>English </td>
+        <td>Kiswahili</td>
+        <td>Biology</td>
+        <td>Biology</td>
+        <td>Physics</td>
+    </tr>
+    <tr  bgcolor="yellow" align="center">
+        <th bgcolor="green">Thur</th>
+        <td>Maths</td>
+        <td>English </td>
+        <td>Kiswahili</td>
+        <td>Biology</td>
+        <td>Biology</td>
+        <td>Physics</td>
+    </tr>
+    <tr  bgcolor="yellow" align="center">
+        <th bgcolor="green">Fri</th>
+        <td>Maths</td>
+        <td>Maths</td>
+        <td>English </td>
+        <td>Kiswahili</td>
+        <td>Biology</td>
+        <td>Physics</td>
+    </tr>
+    <tfoot>
+        <tr bgcolor="green" align="center">
+            <td colspan="9">Footer</td>
+        </tr>
+    </tfoot>
+</table>
+
+</section>
+
+
+</body>
+
+</html>

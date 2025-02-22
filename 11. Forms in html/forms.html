@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="en">
+
+<head>
+    <title> Html forms </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Start forms -->
+    <form action="/home.html" method="GET" name="form" enctype="multipart/form-data">
+        <label>
+            Username: <input type="text" value="User" name="username" id="username" required>
+        </label>
+        <!-- <input type="text" placeholder="User" name="username" id="username"> -->
+<br>
+Bio:
+<br>
+        <textarea cols="30" rows="8" name="bio" id="bio" placeholder="Write something"></textarea>
+<br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" min="10">
+<br>
+        <label for="myfile">File/Image:</label>
+        <input type="file" name="myfile" id="myfile">
+<br>
+Gender
+<br>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label>
+<br>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label>
+<br>
+<br>
+        <input type="search" name="search" id="search" value="Search">
+<br>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" maxlength="15" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="1234-567-890">
+<br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+<br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+<br>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" >
+<br>
+        <label for="eyeColor">Eye color:</label>
+        <select name="eyeColor" id="eyeColor"><!-- multiple for multiple selection -->
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+        </select>
+<br>
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="color">
+<br>
+<br>
+        <label for="range">Range:</label>
+        <input type="range" name="range" id="range">
+<br>
+        <label for="url">Url:</label>
+        <input type="url" name="url" id="url">
+<br>
+Courses
+<br>
+        <input type="checkbox" name="html" id="html" >
+        <label for="html">HTML</label>
+<br>
+        <input type="checkbox" name="css" id="css" >
+        <label for="css">CSS</label>
+
+        <input type="hidden" name="hidden" value="hidden">
+
+<br>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+    <!-- End forms -->
+     <!-- reference -->
+      <h4>mdn docs</h4>
+
+<details>
+    <summary>
+      <code class="name">
+        &lt;<slot name="element-name">NEED NAME</slot>&gt;
+      </code>
+      <span class="desc"><slot name="description">NEED DESCRIPTION</slot></span>
+    </summary>
+    <div class="attributes">
+      <h4>Attributes</h4>
+      <slot name="attributes"><p>None</p></slot>
+      <slot name="attributes"><p>None</p></slot>
+    </div>
+</details>
+
+<!-- <details>
+</details> -->
+
+<!-- <input type="text" value="Name"> -->
+
+</body>
+
+</html>
